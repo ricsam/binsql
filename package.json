@@ -1,7 +1,29 @@
 {
   "name": "binsql",
   "version": "0.0.2",
-  "description": "Allowlisted SQL parsing and serialization for canonical PostgreSQL output",
+  "description": "Allowlisted SQL parser and serializer for canonical PostgreSQL output",
+  "author": "ricsam <oss@ricsam.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricsam/binsql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricsam/binsql/issues"
+  },
+  "homepage": "https://github.com/ricsam/binsql#readme",
+  "keywords": [
+    "sql",
+    "postgres",
+    "postgresql",
+    "parser",
+    "serializer",
+    "ast",
+    "allowlist",
+    "canonical-sql",
+    "sql-dialect",
+    "bun"
+  ],
   "module": "index.ts",
   "type": "module",
   "scripts": {
