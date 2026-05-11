@@ -1,11 +1,26 @@
 {
   "name": "binsql",
+  "version": "0.0.1",
+  "description": "Allowlisted SQL parsing and serialization for canonical PostgreSQL output",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "bunx --bun tsc --noEmit",
+    "build:npm": "bun scripts/build.ts",
+    "changeset": "bunx --bun changeset",
+    "version-packages": "bunx --bun changeset version",
+    "publish:npm": "bun run build:npm && bunx --bun changeset publish --access=public --registry=https://registry.npmjs.org/"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@changesets/cli": "latest",
+    "@types/bun": "latest",
+    "libpg-query": "^17.7.3"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "chevrotain": "^12.0.0"
   }
 }

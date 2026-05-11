@@ -1,0 +1,14 @@
+{
+  "expectedFailures": [
+    {
+      "code": "E_UNSUPPORTED_STATEMENT",
+      "statementPattern": "^CREATE\\s+MATERIALIZED\\s+VIEW\\b",
+      "reason": "Timescale continuous aggregate materialized views are copied into the corpus but not implemented in the current compiler slice."
+    },
+    {
+      "code": "E_UNSUPPORTED_STATEMENT",
+      "statementPattern": "^DO\\s+\\$\\$",
+      "reason": "Raw DO blocks are intentionally rejected; spec.md calls for a binsql-native replacement."
+    }
+  ]
+}
