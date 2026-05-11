@@ -1,6 +1,6 @@
 {
   "name": "binsql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allowlisted SQL parsing and serialization for canonical PostgreSQL output",
   "module": "index.ts",
   "type": "module",
