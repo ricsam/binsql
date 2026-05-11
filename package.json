@@ -10,7 +10,7 @@
     "build:npm": "bun scripts/build.ts",
     "changeset": "bunx --bun changeset",
     "version-packages": "bunx --bun changeset version",
-    "publish:npm": "bun run build:npm && bunx --bun changeset publish --access=public --registry=https://registry.npmjs.org/"
+    "publish:npm": "bun run build:npm && bunx --bun changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "latest",
